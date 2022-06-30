@@ -1,0 +1,22 @@
+
+
+
+.grid-item-logo a img{
+    height: 100%;
+    width: 100%;
+}
+
+.animacion-uno:hover{
+    transform: scale(1.5);
+    transition: all 2s;
+    }
+
+.color-delfondo{
+
+    background-color: rgba(215, 215, 215, 0.305);
+}
+
+
+.quitar-style{
+    list-style-type: none;
+}
