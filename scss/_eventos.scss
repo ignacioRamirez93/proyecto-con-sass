@@ -1,0 +1,30 @@
+/* --------  .eventos ------------   */
+.titulo-index{
+    display: flex;
+}
+
+.evento-tipo{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: $bg-font;
+}
+
+.evento-nombre{
+    display: flex;
+    justify-content: space-around;
+    font-family: $bg-font;
+    width: auto;
+}
+
+
+
+.imagenes-eventos  {
+    display: flex;
+    height: 70%;
+    width: 70%;
+    justify-content: center;
+    object-fit: cover;
+    margin-left: 15%;
+}

@@ -1,0 +1,25 @@
+
+
+    .animacion-uno:hover{
+    transform: scale(2);
+    transition: all 2s;
+    }
+
+
+    .animate__animated.animate__heartBeat {
+    --animate-duration: 4s;
+    }
+
+    .opacar{
+         filter:alpha(opacity=50);
+         -moz-opacity: 0.5;
+         opacity: 0.5;
+         -khtml-opacity: 0.5;
+    }
+     
+    .opacar:hover{
+         filter:alpha(opacity=100);  
+         -moz-opacity: 1.0;  
+         opacity: 1.0;
+         -khtml-opacity: 1.0; 
+    }

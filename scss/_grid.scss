@@ -1,0 +1,92 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 250px 80px 400px 150px ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: $bg-bordes;
+    gap: 3px;
+   }
+
+
+.grid-item-logo{ 
+    grid-column: 1/ span 4;
+    grid-row: 1/2;
+    border: $bg-bordes;
+    }
+
+
+.grid-item-eventos{
+    grid-column: 1/ span 4; 
+    grid-row:  2/  3;
+    background-color: $bg-colortitulos;
+    border: $bg-bordes;
+    font-family:  $bg-colortitulos;
+    display: flex;
+    align-items: center;
+    }
+
+.evento1{
+    grid-column: 1/  2; 
+    grid-row:  3/  4;
+    border: $bg-bordes;
+    }
+
+.evento2{
+    grid-column: 2 /  3; 
+    grid-row:  3/  4;
+    border: $bg-bordes;
+    }
+
+.evento3{
+    grid-column: 3 /  4; 
+    grid-row:   3/  4;
+    border: $bg-bordes;
+    }
+
+.evento4{
+    grid-column: 4/ 5; 
+    grid-row:   3/  4;
+    border: $bg-bordes;
+    }
+
+.grid-item-footer{
+    grid-column: 1/ span 4;
+    grid-row: 4 /  5;
+    border: $bg-bordes;
+    }
+
+/*------------Fin Grid index--------------*/
+
+/*--------------Grid empresa-----------*/
+
+.grid-container-empresa{
+    display: grid;
+    grid-template-rows: 250px 100px 420px 150px ;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: $bg-bordes;
+    gap: 3px;
+    }
+
+.grid-item-logo-empresa{ 
+    grid-column: 1/ span 3;
+    grid-row: 1/2;
+    border: $bg-bordes;
+    }
+
+.grid-item-tituloempresa{
+    grid-column: 1/ span 3;
+    grid-row: 2/3;
+    border: $bg-bordes;
+    background-color: $bg-colortitulos;
+    }
+
+.grid-item-presentacion{
+    grid-column: 1 / span 3;
+    grid-row: 3/4;
+    border: $bg-bordes;
+    }
+
+.grid-item-footer-empresa{
+    grid-column: 1 / span 3;
+    grid-row: 4 /  5;
+    border: $bg-bordes;
+    }

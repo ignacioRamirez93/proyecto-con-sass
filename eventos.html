@@ -1,575 +1,249 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa</title>
+    <!--css-->
 
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400&display=swap" rel="stylesheet">
 
 
-<!------- header ------>
-   <header>
-   
-    <nav class="navbar navbar-expand-lg color-delfondo ">
-        <div class="container-fluid">
-          <a class="navbar-brand animacion-uno p-2 " href="index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item p-2">
-                <a class="nav-link animacion-uno " aria-current="page" href="eventos.html">Eventos</a>
-              </li>
-              <li class="nav-item p-2">
-                <a class="nav-link animacion-uno" href="empresa.html">Empresa</a>
-              </li>
-              <li class="nav-item p-2">
-                <a class="nav-link animacion-uno" href="creaevento.html">Crea un Evento</a>
-              </li>
-              
-              <li class="nav-item p-2">
-                <a class="nav-link animacion-uno" href="#contacto"> Contactanos</a>
-              </li>
+     <!--animaciones-->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+
+</head>
+
+<body>
+
+    <!--header-->
+    <header>
+        <nav>
+            <ul class="cabecera-lista ">
+                <li class="animacion-uno"><a href="index.html">Home</a></li>
+                <li class="animacion-uno"><a href="empresa.html">Empresa</a></li>
+                <li class="animacion-uno"><a href="eventos.html">Eventos</a></li>
+                <li class="animacion-uno"><a href="creaevento.html">Crea un evento</a></li>
+                <li class="animacion-uno"><a href="#contacto">Contactos </a></li>
+
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar un evento" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+        </nav>  
 
     </header>
-
-<!------- fin header ------>
-<!------- logo ------>
-
-    <div class="d-flex justify-content-center"">
+    <!--fin header-->
+    
+    <div class="grid-item-logo">
 
         <a href="index.html">
 
-        <img class="animate__animated animate__heartBeat"  src="imagen/LOGO.png" alt="¿Que hacer Hoy?" >
+        <img class="animate__animated animate__heartBeat" src="imagen/LOGO.png" alt="¿Que hacer Hoy?" >
 
         </a>
        
-   </div> 
-<!------- fin logo ------> 
-<!------- filtros ------>
-<section >
+   </div>  
+   
 
-    <nav class="navbar color-delfondo  ">
-        <div class="container-fluid ">
-          <a class="navbar-brand">Filtros</a>
-          
-        </div>
-      </nav>
-    </section >
-
-    <section class="p-4 d-flex justify-content-around ">
-    <a class="badge rounded-pill text-bg-primary"  href="#musica">Musica </a>
-    <a class="badge rounded-pill text-bg-secondary"href="#deporte">Deporte </a> 
-    <a class="badge rounded-pill text-bg-success"  href="#teatro"> Teatro </a> 
-    <a class="badge rounded-pill text-bg-danger"   href="#gastronomia">Gastronomia </a> 
-    <a class="badge rounded-pill text-bg-warning"  href="#educativo">Educativo </a> 
-    <a class="badge rounded-pill text-bg-info"     href="#pasatiempos">Pasatiempos</a>
-    <a class="badge rounded-pill text-bg-dark"     href="#otros">Otros</a>
-   </section >
+    <!-- Buscador de eventos y filtros-->
+    <h1> Eventos 
+         <input type="text" value="Buscar eventos" size="50">
+        </h1>
 
 
+    <h2>Filtros</h2>
+    <section class="filtros">
+        <nav>
+            <ul>
 
-<!------- Fin filtros------>
-<!------- Eventos ------>
-<section>
+                <li><a class="opacar" href="#gastronomia">Gastronomia </a></li> 
+                <li><a class="opacar" href="#deporte"> Deporte </a></li>
+                <li><a class="opacar"  href="#teatro"> Teatro </a></li>
+                <li><a class="opacar"  href="#musica"> Musica </a></li>
+                <li class="opacar" > Pasatiempo</li>
+                <li class="opacar" >Educativos</li>
+                <li class="opacar" >Otros</li>
 
-    <nav class="navbar color-delfondo  pt-3">
-        <div class="container-fluid">
-          <a class="navbar-brand"> Eventos cerca de ti </a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar evento" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
-      </nav>
-    </section>
+           </ul>
+        </nav>
 
+     </section>
 
-    <section>
-      <div class="card-group">
-        <div class="card">
-          <img src="https://loremflickr.com/640/480/sport" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-             <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://loremflickr.com/640/480/football" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-             <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://loremflickr.com/640/480/basquetball"class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-             <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-          </div>
-        </div>
+      <!-- Buscador de eventos y filtros-->
 
-        <div class="card">
-          <img src="https://loremflickr.com/640/480/tennis" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-             <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-          </div>
-        </div>
+    <!--Tipos de eventos disponibles-->
+
+   
+    <h1 >Eventos destacados cerca de ti</h1>
 
 
-
-
-      </div>
-
-      
-
-    </section>
-
-   <section>
-
-    <nav class="navbar color-delfondo  pt-3">
-        <div class="container-fluid">
-          <a class="navbar-brand" id="musica">Musica </a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar evento" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
-      </nav>
-    </section>
-
-
-    <section>
-      <div class="card-group">
-        <div class="card">
-          <img src="https://loremflickr.com/640/480/rockandroll" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-             <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://loremflickr.com/640/480/jazz" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-             <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://loremflickr.com/640/480/rap"class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-             <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://loremflickr.com/640/480/drums" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-             <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-
-    <section>
-
-        <nav class="navbar color-delfondo  pt-3">
-            <div class="container-fluid">
-              <a class="navbar-brand"id="deporte">Deporte</a>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar evento" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>
-            </div>
-          </nav>
-        </section>
-    
-    
-        <section>
-          <div class="card-group">
-            <div class="card">
-              <img src="https://loremflickr.com/640/480/football" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="https://loremflickr.com/640/480/basquetball" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="https://loremflickr.com/640/480/tennis"class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="https://loremflickr.com/640/480/hockey" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-              </div>
-            </div>
-          </div>
-    
-        </section>
-    
-        <section>
-
-            <nav class="navbar color-delfondo  pt-3">
-                <div class="container-fluid">
-                  <a class="navbar-brand"id="teatro">Teatro</a>
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar evento" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
-                </div>
-              </nav>
-               </section>
+    <section class="eventos">
         
-        
-            <section>
-              <div class="card-group">
-                <div class="card">
-                  <img src="https://loremflickr.com/640/480/music" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                     <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="https://loremflickr.com/640/480/theater" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                     <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="https://loremflickr.com/640/480/mask"class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                     <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="https://loremflickr.com/640/480/comedy" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                     <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                  </div>
-                </div>
-              </div>
-        
-                </section>
-        
-            <section>
-
-                <nav class="navbar color-delfondo  pt-3">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" id="gastronomia">Gastronomia</a>
-                      <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar evento" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                      </form>
-                    </div>
-                  </nav>
-                </section>
             
+                <div><img src="imagen/Quilmes-rock.jpg" class="imagenes-eventos-singrid" alt="Quilmes rock">
+                <p><a href="https://ventas.areaticket.com.ar/event?p=82B84FBBA982F19E7529DDFDDAD726A767B86BDFD1504539"
+                    target="_blank"> Quilmes Rock</a><p></div>
+
+                <div><img src="imagen/soy-rada.jpg" class="imagenes-eventos-singrid" alt="Soy Rada">
+                <p><a href="https://www.ticketek.com.ar/soy-rada" target="_blank"> Soy Rada</a></p></div>
+
+                <div><img src="imagen/river-boca.jpg"class="imagenes-eventos-singrid" alt="River vs Boca">
+                <p><a href="https://www.cariverplate.com.ar/venta-de-entradas" target="_blank"> River VS Boca</a></p></div>
+
+                <div><img src="imagen/Masticar.jpg" class="imagenes-eventos-singrid"  alt="Feria Masticar">
+                <p><a href="https://www.ticketek.com.ar" target="_blank"> Feria Masticar</a></p></div>
+
+                <div class="mas"><h5 class="mas"> <a  href="eventos.html">Mas</a></li></h5></div>
+
             
-                <section>
-                  <div class="card-group">
-                    <div class="card">
-                      <img src="https://loremflickr.com/640/480/food" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                         <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="https://loremflickr.com/640/480/restaurant" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                         <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="https://loremflickr.com/640/480/drinks"class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                         <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="https://loremflickr.com/640/480/bar" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                         <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                      </div>
-                    </div>
-                  </div>
+        
+
+    </section>
+
+    
+
+    
+
+    <h1><p id="deporte">Deporte</p> </h1>
+
+    <section class="eventos">
+        
             
-                </section>
+                 <div><img src="imagen/river-boca.jpg" class="imagenes-eventos-singrid"  alt="River vs Boca">
+                 <p><a href="https://www.cariverplate.com.ar/venta-de-entradas" target="_blank"> River VS Boca</a></p></div> 
+
+                 <div><img src="imagen/river-boca.jpg" class="imagenes-eventos-singrid"  alt="River vs Boca">
+                 <p><a href="https://www.cariverplate.com.ar/venta-de-entradas" target="_blank"> River VS Boca</a></p></div>
 
                 
+                 <div><img src="imagen/river-boca.jpg" class="imagenes-eventos-singrid"  alt="River vs Boca">
+                 <p><a href="https://www.cariverplate.com.ar/venta-de-entradas" target="_blank"> River VS Boca</a></p></div>
 
-                    <section>
+                 <div><img src="imagen/river-boca.jpg" class="imagenes-eventos-singrid"  alt="River vs Boca">
+                 <p><a href="https://www.cariverplate.com.ar/venta-de-entradas" target="_blank"> River VS Boca</a></p></div>
 
-                        <nav class="navbar color-delfondo  pt-3">
-                            <div class="container-fluid">
-                              <a class="navbar-brand" id="educativo">Educativo </a>
-                              <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Buscar evento" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Buscar</button>
-                              </form>
-                            </div>
-                          </nav>
-                        </section>
-                    
-                    
-                        <section>
-                          <div class="card-group">
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/book" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/school" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/university"class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
+                 <div class="mas"><h5 class="mas"> <a  href="eventos.html">Mas</a></li></h5></div>
 
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/library" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
-                          </div>
-                    
-                        </section>
-
-                       
-                    
-                        <section>
-
-                        <nav class="navbar color-delfondo  pt-3">
-                            <div class="container-fluid">
-                              <a class="navbar-brand" id="pasatiempos">Pasatiempos </a>
-                              <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Buscar evento" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Buscar</button>
-                              </form>
-                            </div>
-                          </nav>
-                        </section>
-                    
-                    
-                        <section>
-                          <div class="card-group">
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/chess" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/beach" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/city"class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/music" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
-                          </div>
-                    
-                        </section>
-
-                        
-
-                        <section>
-
-                        <nav class="navbar color-delfondo  pt-3">
-                            <div class="container-fluid">
-                              <a class="navbar-brand" id="otros"> Otros </a>
-                              <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Buscar evento" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Buscar</button>
-                              </form>
-                            </div>
-                          </nav>
-                        </section>
-                    
-                    
-                        <section>
-                          <div class="card-group">
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/mountain" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/tv" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/house"class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="https://loremflickr.com/640/480/running" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                 <a href="https://www.ticketek.com.ar/" target="_blank"><p class="card-text"><small class="text-muted">Comprar entrada</small></p></a>
-                              </div>
-                            </div>
-                          </div>
-                    
-                        </section>
             
-                        
+        
 
+    </section>
 
-
-
-
-<!------- Fin Eventos ------>
-
-<!------- footer ------>
-
-</footer>
-
-
-<nav class="navbar color-delfondo ">
-    <div class="container-fluid">
-      <a class="navbar-brand" id="contacto">Contactanos</a>
-      
-    </div>
-  </nav>
-</section>
-
-<nav class="navbar bg-light ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://www.instagram.com/">
-        <img src="imagen/instagram.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-        Instagram
-      </a>
-    </div>
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://www.facebook.com/">
-        <img src="imagen/facebook.jpg"alt="" width="30" height="24" class="d-inline-block align-text-top">
-        facebook
-      </a>
-    </div>
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://twitter.com/">
-        <img src="imagen/twitter.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-        Twitter
-      </a>
-    </div>
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://outlook.live.com/owa/">
-        <img src="imagen/email.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-        Email
-      </a>
-    </div>
-
-
-    </div>
-  </nav>
     
 
-</footer>
-<!------- Fin footer ------>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+    
+
+    <h1> <p id="musica">Musica</p> </h1>
+
+    <section class="eventos">
+        
+            
+                 <div><img src="imagen/Quilmes-rock.jpg" class="imagenes-eventos-singrid"  alt="Quilmes rock">
+                 <p><a href="https://ventas.areaticket.com.ar/event?p=82B84FBBA982F19E7529DDFDDAD726A767B86BDFD1504539"
+                    target="_blank"> Quilmes Rock</a><p></div>
+
+                 <div><img src="imagen/Quilmes-rock.jpg" class="imagenes-eventos-singrid"  alt="Quilmes rock">
+                 <p><a href="https://ventas.areaticket.com.ar/event?p=82B84FBBA982F19E7529DDFDDAD726A767B86BDFD1504539"
+                    target="_blank"> Quilmes Rock</a><p></div>
+
+                 <div><img src="imagen/Quilmes-rock.jpg" class="imagenes-eventos-singrid"  alt="Quilmes rock">
+                 <p><a href="https://ventas.areaticket.com.ar/event?p=82B84FBBA982F19E7529DDFDDAD726A767B86BDFD1504539"
+                    target="_blank"> Quilmes Rock</a><p></div>
+
+                 <div><img src="imagen/Quilmes-rock.jpg" class="imagenes-eventos-singrid"  alt="Quilmes rock">
+                 <p><a href="https://ventas.areaticket.com.ar/event?p=82B84FBBA982F19E7529DDFDDAD726A767B86BDFD1504539"
+                    target="_blank"> Quilmes Rock</a><p></div>
+
+                 <div class="mas"><h5 class="mas"> <a  href="eventos.html">Mas</a></li></h5></div>
+
+            
+        
+
+    </section>
+    
+    
+
+    <h1> <p id="gastronomia">Gastronomia</p> </h1>
+
+    <section class="eventos">
+        
+            
+                 <div><img src="imagen/Masticar.jpg" class="imagenes-eventos-singrid"  alt="Feria Masticar">
+                 <p><a href="https://www.ticketek.com.ar" target="_blank"> Feria Masticar</a></p></div>
+
+                 <div><img src="imagen/Masticar.jpg" class="imagenes-eventos-singrid"  alt="Feria Masticar">
+                 <p><a href="https://www.ticketek.com.ar" target="_blank"> Feria Masticar</a></p></div>
+
+                 <div><img src="imagen/Masticar.jpg" class="imagenes-eventos-singrid"  alt="Feria Masticar">
+                 <p><a href="https://www.ticketek.com.ar" target="_blank"> Feria Masticar</a></p></div>
+
+                 <div><img src="imagen/Masticar.jpg" class="imagenes-eventos-singrid"  alt="Feria Masticar">
+                 <p><a href="https://www.ticketek.com.ar" target="_blank"> Feria Masticar</a></p></div>
+
+                 <div class="mas"><h5 class="mas"> <a  href="eventos.html">Mas</a></li></h5></div>
+
+            
+        
+
+    </section>
+    
+
+
+    <h1><p id="teatro">Teatro</p> </h1>
+
+    <section class="eventos">
+        
+            
+                 <div><img src="imagen/soy-rada.jpg" class="imagenes-eventos-singrid"  alt="Soy Rada">
+                 <p><a href="https://www.ticketek.com.ar/soy-rada" target="_blank"> Soy Rada</a></p></div>
+
+                 <div><img src="imagen/soy-rada.jpg" class="imagenes-eventos-singrid"  alt="Soy Rada">
+                 <p><a href="https://www.ticketek.com.ar/soy-rada" target="_blank"> Soy Rada</a></p></div>
+
+                 <div><img src="imagen/soy-rada.jpg" class="imagenes-eventos-singrid"  alt="Soy Rada">
+                 <p><a href="https://www.ticketek.com.ar/soy-rada" target="_blank"> Soy Rada</a></p></div> 
+                
+                 <div><img src="imagen/soy-rada.jpg" class="imagenes-eventos-singrid"  alt="Soy Rada">
+                 <p><a href="https://www.ticketek.com.ar/soy-rada" target="_blank"> Soy Rada</a></p></div>
+
+                 <div class="mas"><h5 class="mas"> <a  href="eventos.html">Mas</a></li></h5></div>
+
+            
+       
+
+    </section>
+   
+
+    <!--Fin tipos de eventos disponibles-->
+
+
+    <!--footer-->
+    
+        <footer >
+
+         <p class="footer-p" id="contacto">Contactos</p>
+
+         <ul>
+             <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+             <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+             <li><a href="https://www.whatsapp.com/" target="_blank">Whatsapp</a></li>
+         </ul>
+
+
+        </footer>
+    
+
+
+
+</body>
+
 </html>

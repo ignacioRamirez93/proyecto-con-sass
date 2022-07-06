@@ -1,0 +1,284 @@
+.grid-item-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item-logo a img {
+  height: 100%;
+  width: 100%;
+}
+
+/* --------  .eventos ------------   */
+.titulo-index {
+  display: flex;
+}
+
+.evento-tipo {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-family: "Lexend", sans-serif;
+}
+
+.evento-nombre {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Lexend", sans-serif;
+  width: auto;
+}
+
+.imagenes-eventos {
+  display: flex;
+  height: 70%;
+  width: 70%;
+  justify-content: center;
+  object-fit: cover;
+  margin-left: 15%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 250px 80px 400px 150px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 3px solid rgb(0, 0, 0);
+  gap: 3px;
+}
+
+.grid-item-logo {
+  grid-column: 1/span 4;
+  grid-row: 1/2;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.grid-item-eventos {
+  grid-column: 1/span 4;
+  grid-row: 2/3;
+  background-color: rgba(97, 16, 173, 0.651);
+  border: 3px solid rgb(0, 0, 0);
+  font-family: rgba(97, 16, 173, 0.651);
+  display: flex;
+  align-items: center;
+}
+
+.evento1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.evento2 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.evento3 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.evento4 {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.grid-item-footer {
+  grid-column: 1/span 4;
+  grid-row: 4/5;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+/*------------Fin Grid index--------------*/
+/*--------------Grid empresa-----------*/
+.grid-container-empresa {
+  display: grid;
+  grid-template-rows: 250px 100px 420px 150px;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 3px solid rgb(0, 0, 0);
+  gap: 3px;
+}
+
+.grid-item-logo-empresa {
+  grid-column: 1/span 3;
+  grid-row: 1/2;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.grid-item-tituloempresa {
+  grid-column: 1/span 3;
+  grid-row: 2/3;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgba(97, 16, 173, 0.651);
+}
+
+.grid-item-presentacion {
+  grid-column: 1/span 3;
+  grid-row: 3/4;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.grid-item-footer-empresa {
+  grid-column: 1/span 3;
+  grid-row: 4/5;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.animacion-uno:hover {
+  transform: scale(2);
+  transition: all 2s;
+}
+
+.animate__animated.animate__heartBeat {
+  --animate-duration: 4s;
+}
+
+.opacar {
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -khtml-opacity: 0.5;
+}
+
+.opacar:hover {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+  -khtml-opacity: 1;
+}
+
+footer {
+  font-family: "Lexend", sans-serif;
+}
+
+.titulo-footer {
+  background-color: rgba(97, 16, 173, 0.651);
+  padding: 15px;
+}
+
+.footer-p {
+  background-color: rgba(97, 16, 173, 0.651);
+  font-family: "Lexend", sans-serif;
+  padding: 15px;
+  width: 100%;
+}
+
+/*-----------------empresa------------*/
+.tituloempresa {
+  display: flex;
+  justify-content: center;
+  font-family: rgba(97, 16, 173, 0.651);
+  padding-top: 2%;
+}
+
+.videoempresa {
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+.video {
+  width: 100%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.textoempresa {
+  display: flex;
+  justify-content: center;
+}
+
+/*-----------fin empresa--------------------*/
+header {
+  background-color: rgba(97, 16, 173, 0.872);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 3%;
+}
+
+.cabecera-lista {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-family: "Lexend", sans-serif;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(185, 149, 219, 0.651);
+}
+
+a {
+  color: rgb(12, 12, 12);
+  text-decoration: none;
+}
+
+h1 {
+  background-color: rgba(97, 16, 173, 0.651);
+  font-family: "Lexend", sans-serif;
+  width: 100%;
+  padding: 30px;
+}
+
+/*------------- filtros--------------*/
+.filtros nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-family: rgba(97, 16, 173, 0.651);
+  align-items: center;
+}
+
+.filtros {
+  padding: 40px;
+}
+
+/*------------ fin filtros----------*/
+.formulario {
+  font-family: rgba(97, 16, 173, 0.651);
+  margin: 3%;
+}
+
+.formulario li {
+  margin: 4%;
+}
+
+/*------------Eventos sin Grid--------*/
+.eventos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.eventos div {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.eventos div h4 {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-around;
+  font-family: rgba(97, 16, 173, 0.651);
+  margin-top: 10px;
+}
+
+.imagenes-eventos-singrid {
+  height: 30vh;
+  width: 40vh;
+  object-fit: cover;
+}
+
+.mas {
+  padding-top: 70px;
+  font-family: rgba(97, 16, 173, 0.651);
+}
+
+/*# sourceMappingURL=style.css.map */
